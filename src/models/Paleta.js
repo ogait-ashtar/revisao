@@ -7,6 +7,6 @@ const PaletaSchema = new mongoose.Schema({
   valor: { type: Number, required: true },
 }); //modelo de json
 
-const Paleta = mongoose.model("Paleta", PaletaSchema, "paletas"); //nome da model o schema e a collection
+const Paleta = mongoose.model("Paleta", PaletaSchema, "paletas"); //nome da model o schema e a collection na variavel Paleta q vai chamar no service
 
 module.exports = Paleta;
