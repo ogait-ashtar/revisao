@@ -57,9 +57,6 @@ const updatePaleta = async (req, res) => {
 
   const paleta = await paletasService.findByIdPaleta(id);
 
-  if (!paleta) {
-    return res.status(204);
-  }
 
   if (
     !newPaleta ||
